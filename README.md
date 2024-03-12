@@ -2,6 +2,10 @@
 
 This project is a web development project aimed at creating a hotel management system. It includes backend development using Spring Boot and frontend development with HTML, CSS, and Thymeleaf.
 
+![GitHub stars](https://img.shields.io/github/stars/SAMUR274/WEBPROJ?style=social)
+![GitHub issues](https://img.shields.io/github/issues/SAMUR274/WEBPROJ)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/SAMUR274/WEBPROJ)
+
 ## Project Structure
 ```
 hotel-management-system
