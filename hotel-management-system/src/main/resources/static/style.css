@@ -1,0 +1,135 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styles */
+.main-content {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Form styles */
+form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+form input[type="text"], form input[type="number"], form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    background-color: #444;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
