@@ -3,49 +3,50 @@
 This project is a web development project aimed at creating a hotel management system. It includes backend development using Spring Boot and frontend development with HTML, CSS, and Thymeleaf.
 
 ## Project Structure
-hotel-management-system
-├── src
-│   ├── main
-│   │   ├── java
-│   │   │   └── com
-│   │   │       └── webdevuoit3230
-│   │   │           └── hotel_management_system
-│   │   │               ├── model
-│   │   │               │   ├── Customer.java
-│   │   │               │   ├── Room.java
-│   │   │               │   ├── Booking.java
-│   │   │               │   └── ProvidedService.java
-│   │   │               ├── repository
-│   │   │               │   ├── CustomerRepository.java
-│   │   │               │   ├── RoomRepository.java
-│   │   │               │   ├── BookingRepository.java
-│   │   │               │   └── ProvidedServiceRepository.java
-│   │   │               ├── service
-│   │   │               │   ├── CustomerService.java
-│   │   │               │   ├── RoomService.java
-│   │   │               │   ├── BookingService.java
-│   │   │               │   └── ProvidedServiceService.java
-│   │   │               └── controller
-│   │   │                   ├── CustomerController.java
-│   │   │                   ├── RoomController.java
-│   │   │                   ├── BookingController.java
-│   │   │                   └── ProvidedServiceController.java
-│   │   └── resources
-│   │       ├── application.properties
-│   │       ├── static
-│   │       │   └── style.css
-│   │       └── templates
-│   │           ├── customers.html
-│   │           ├── rooms.html
-│   │           ├── bookings.html
-│   │           └── services.html
-│   └── test
-│       └── java
-│           └── com
-│               └── webdevuoit3230
-│                   └── hotel_management_system
-│                       └── SimpleSrategyTest.java
-└── pom.xml
+hotel-management-system 
+├── src 
+│ ├── main 
+│ │ ├── java 
+│ │ │ └── com 
+│ │ │ └── webdevuoit3230 
+│ │ │ └── hotel_management_system 
+│ │ │ ├── model 
+│ │ │ │ ├── Customer.java 
+│ │ │ │ ├── Room.java 
+│ │ │ │ ├── Booking.java 
+│ │ │ │ └── ProvidedService.java 
+│ │ │ ├── repository 
+│ │ │ │ ├── CustomerRepository.java 
+│ │ │ │ ├── RoomRepository.java 
+│ │ │ │ ├── BookingRepository.java 
+│ │ │ │ └── ProvidedServiceRepository.java 
+│ │ │ ├── service 
+│ │ │ │ ├── CustomerService.java 
+│ │ │ │ ├── RoomService.java 
+│ │ │ │ ├── BookingService.java 
+│ │ │ │ └── ProvidedServiceService.java 
+│ │ │ └── controller 
+│ │ │ ├── CustomerController.java 
+│ │ │ ├── RoomController.java 
+│ │ │ ├── BookingController.java 
+│ │ │ └── ProvidedServiceController.java 
+│ │ └── resources 
+│ │ ├── application.properties 
+│ │ ├── static 
+│ │ │ └── style.css 
+│ │ └── templates 
+│ │ ├── customers.html 
+│ │ ├── rooms.html 
+│ │ ├── bookings.html 
+│ │ └── services.html 
+│ └── test 
+│ └── java 
+│ └── com 
+│ └── webdevuoit3230 
+│ └── hotel_management_system 
+│ └── SimpleSrategyTest.java
+  └── pom.xml
+
 
 
 ## Technologies Used
