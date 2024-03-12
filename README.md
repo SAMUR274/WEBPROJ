@@ -4,8 +4,6 @@ This project is a web development project aimed at creating a hotel management s
 
 ## Project Structure
 hotel-management-system
-
-
 ├── src 
 │ ├── main 
 │ │ ├── java 
