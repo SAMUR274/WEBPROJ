@@ -1,6 +1,6 @@
 # Hotel Management System Project
 
-This project is a web development project aimed at creating a hotel management system. It includes backend development using Spring Boot and frontend development with HTML, CSS, and Thymeleaf.
+This project is a web development project aimed at creating a hotel management system. It includes backend development using Spring Boot and frontend development with HTML, CSS and JS.
 
 ![GitHub stars](https://img.shields.io/github/stars/SAMUR274/WEBPROJ?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/SAMUR274/WEBPROJ)
@@ -75,7 +75,7 @@ To run the project:
 
 ## Frontend Development
 
-The frontend development includes Thymeleaf templates for managing customers, rooms, bookings, and services. The `style.css` file in the `static` directory contains CSS styles for consistent styling across the application.
+The frontend development includes a structure for managing customers, rooms, bookings, and services. The `style.css` file in the `static` directory contains CSS styles for consistent styling across the application.
 
 ## Backend Development
 
