@@ -3,7 +3,9 @@
 This project is a web development project aimed at creating a hotel management system. It includes backend development using Spring Boot and frontend development with HTML, CSS, and Thymeleaf.
 
 ## Project Structure
-hotel-management-system 
+hotel-management-system
+
+
 ├── src 
 │ ├── main 
 │ │ ├── java 
