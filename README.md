@@ -59,7 +59,7 @@ hotel-management-system
 - **Backend Framework:** Spring Boot
 - **Database:** H2
 - **ORM:** Spring Data JPA
-- **Frontend:** HTML, CSS, Thymeleaf
+- **Frontend:** HTML, CSS, JS
 - **Build Tool:** Maven
 - **Java Version:** 8 or above
 
