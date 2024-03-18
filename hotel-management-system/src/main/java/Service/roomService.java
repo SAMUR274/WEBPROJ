@@ -13,7 +13,12 @@ public class roomService {
     @Autowired
     private roomRepository room_Repository;
 
-    // Implement service methods
+    public roomService(roomRepository room_Repository) {
+		super();
+		this.room_Repository = room_Repository;
+	}
+
+	// Implement service methods
     // Method to save or update a room
     public room saveOrUpdateRoom(room room) {
         return room_Repository.save(room);

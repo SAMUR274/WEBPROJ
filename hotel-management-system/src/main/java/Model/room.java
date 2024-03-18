@@ -1,9 +1,8 @@
 package Model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class room {
@@ -14,16 +13,18 @@ public class room {
     private String type;
     private int price;
     
-    
-	public room(Long id, String roomNumber, String type, int price) {
+    @OneToMany(mappedBy = "room", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<booking> bookings = new HashSet<>();
+
+	public room(Long id, String roomNumber, String type, int price, Set<booking> bookings) {
 		super();
 		this.id = id;
 		this.roomNumber = roomNumber;
 		this.type = type;
 		this.price = price;
+		this.bookings = bookings;
 	}
 
-    // Getters and setters
 	public Long getId() {
 		return id;
 	}
@@ -56,9 +57,18 @@ public class room {
 		this.price = price;
 	}
 
+	public Set<booking> getBookings() {
+		return bookings;
+	}
+
+	public void setBookings(Set<booking> bookings) {
+		this.bookings = bookings;
+	}
+
 	@Override
 	public String toString() {
-		return "room [id=" + id + ", roomNumber=" + roomNumber + ", type=" + type + ", price=" + price + "]";
+		return "room [id=" + id + ", roomNumber=" + roomNumber + ", type=" + type + ", price=" + price + ", bookings="
+				+ bookings + "]";
 	}
 	
 	

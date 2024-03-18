@@ -26,9 +26,13 @@ public class booking {
     
     @OneToMany(mappedBy = "booking", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<providedService> providedServices = new HashSet<>();
+    
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "room_id", nullable = false)
+    private room room;
 
 	public booking(Long id, Long customerId, Long roomId, Date startDate, Date endDate, Model.customer customer,
-			Set<providedService> providedServices) {
+			Set<providedService> providedServices, Model.room room) {
 		super();
 		this.id = id;
 		this.customerId = customerId;
@@ -37,6 +41,7 @@ public class booking {
 		this.endDate = endDate;
 		this.customer = customer;
 		this.providedServices = providedServices;
+		this.room = room;
 	}
 
 	public Long getId() {
@@ -95,10 +100,19 @@ public class booking {
 		this.providedServices = providedServices;
 	}
 
+	public room getRoom() {
+		return room;
+	}
+
+	public void setRoom(room room) {
+		this.room = room;
+	}
+
 	@Override
 	public String toString() {
 		return "booking [id=" + id + ", customerId=" + customerId + ", roomId=" + roomId + ", startDate=" + startDate
-				+ ", endDate=" + endDate + ", customer=" + customer + ", providedServices=" + providedServices + "]";
+				+ ", endDate=" + endDate + ", customer=" + customer + ", providedServices=" + providedServices
+				+ ", room=" + room + "]";
 	}
 
 }
