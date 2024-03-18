@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="./index.html" id="logo">Name</a></li>
+			<li><a href="./rooms.html">Rooms</a></li>
+			<li><a href="./services.html">Services</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./bookings.html" id="book">Book Now</a></li>
+		</ul>
+	</nav>
+
+	<div class="main">
+		<div class="photo-bg">
+            <div class="photo-booking">
+                <img src="../images/hotel.png" alt="Hotel">
+                <form class="booking">
+                    <div class="booking-heading">HOTEL</div>
+                    <div class="booking-info">
+                        <div class="booking-input">
+                            <label for="check-in">Check In</label>
+                            <input type="text" id="check-in" placeholder="DD MM YYYY" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+                        </div>
+                        <div class="booking-input">
+                            <label for="check-out">Check Out</label>
+                            <input type="text" id="check-out" placeholder="DD MM YYYY" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+                        </div>
+                        <div class="booking-input people">
+                            <label for="adults">Adults</label>
+                            <input type="number" id="adults" value="1" min="1" max="6" required>
+                        </div>
+                        <div class="booking-input people">
+                            <label for="kids">Kids</label>
+                            <input type="number" id="kids" value="0" min="0" max="6" required>
+                        </div>
+                        <button class="search-btn">Search Availability</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+		<div class="rooms" id="rooms">
+            <div class="heading">Rooms</div>
+            <div class="desc"><p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p></div>
+            
+            <form class="booking2-info">
+                <div class="booking2-input width1-4">
+                    <label for="check-in2">Check In</label>
+                    <input type="text" placeholder="DD MM YYYY" id="check-in2" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+                </div>
+                <div class="booking2-input width1-4">
+                    <label for="check-out2">Check Out</label>
+                    <input type="text" placeholder="DD MM YYYY" id="check-out2" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+                </div>
+                <div class="booking2-input booking2-input-last-two">
+                    <label for="adults2">Adults</label>
+                    <input type="number" value="1" min="1" max="6" id="adults2" required>
+                </div>
+                <div class="booking2-input booking2-input-last-two">
+                    <label for="kids2">Kids</label>
+                    <input type="number" value="0" min="0" max="6" id="kids2" required>
+                </div>
+                <div class="search">
+                    <label for="search-btn2">Search</label>
+                    <button class="search-btn2" id="search-btn2">Search</button>
+                </div>
+            </form>
+
+            <div class="room-types">
+                <div class="room-type">
+                    <div class="room-card">
+                        <img src="../images/hotel.png" alt="Single Room">
+                        <div class="room-desc">
+                            <h2>Single Room</h2>
+                            <p class="room-price">From $99</p><br>
+                            <p>Single Bed</p><br>
+                            <p>15m<sup>2</sup></p>
+                            <div class="search-btn2">Choose Room</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-type">
+                    <div class="room-card">
+                        <img src="../images/hotel.png" alt="Double Room">
+                        <div class="room-desc">
+                            <h2>Double Room</h2>
+                            <p class="room-price">From $149</p><br>
+                            <p>Queen-size Bed</p><br>
+                            <p>25m<sup>2</sup></p>
+                            <div class="search-btn2">Choose Room</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="room-type">
+                    <div class="room-card">
+                        <img src="../images/hotel.png" alt="Deluxe Room">
+                        <div class="room-desc">
+                            <h2>Deluxe Room</h2>
+                            <p class="room-price">From $199</p><br>
+                            <p>King-size Bed</p><br>
+                            <p>40m<sup>2</sup></p>
+                            <div class="search-btn2">Choose Room</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+			<div class="search-more">
+				<a href="../templates/rooms.html">Search for more rooms</a>
+			</div>
+        </div>
+
+        
+
+        <div class="offer">
+            <div class="heading">Get the best offers first!</div>
+            <p>Join our newsletter.</p><br>
+            <p>E-mail</p>
+            <input type="text" placeholder="Your Email Address"><br>
+            <button>Subscribe</button>
+        </div>
+
+		<div class="about" id="about">
+			<div class="our-hotels">
+				<div class="heading">Our Hotels</div>
+				<p>You can find our hotels anywhere in the world.</p><br>
+	
+				<div class="hotel-images">
+					<div class="hotel-img hotel-main">
+						<img src="../images/hotel.png" alt="Cinque Terre">
+						<div class="hotel-name">Cinque Terre</div>
+					</div>
+					<div class="hotel-img">
+						<img src="../images/hotel.png" alt="New York">
+						<div class="hotel-name">New York</div>
+					</div>
+					<div class="hotel-img">
+						<img src="../images/hotel.png" alt="San Francisco">
+						<div class="hotel-name">San Francisco</div>
+					</div>
+					<div class="hotel-img">
+						<img src="../images/hotel.png" alt="Pisa">
+						<div class="hotel-name">Pisa</div>
+					</div>
+					<div class="hotel-img">
+						<img src="../images/hotel.png" alt="Paris">
+						<div class="hotel-name">Paris</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-more">
+				<a href="../templates/about.html">Discover our Hotels</a>
+			</div>
+		</div>
+
+        <div class="contact" id="contact">
+            <div class="heading">Contact</div>
+            <p>If you have any questions, do not hesitate to ask them</p><br>
+            <p>Toronto, Canada</p>
+            <p>Phone: 505 5050</p>
+            <p>Email: mail@mail.com</p><br>
+
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Message">
+                <button class="contact-btn">SEND MESSAGE</button>
+            </form>
+        </div>
+	</div>
+
+	<div class="footer">
+        <p><strong>Find Us On</strong></p>
+		<p><a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">X</a></p>
+        <br>
+        <p>Created by <strong>Group</strong></p>
+    </div>
+</body>
+</html>

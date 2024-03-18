@@ -6,7 +6,82 @@
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
-    <h1>Rooms</h1>
+
+    <nav>
+		<ul>
+			<li><a href="./index.html" id="logo">Name</a></li>
+			<li><a href="./rooms.html">Rooms</a></li>
+			<li><a href="./services.html">Services</a></li>
+			<li><a href="./about.html">About</a></li>
+			<li><a href="./bookings.html" id="book">Book Now</a></li>
+		</ul>
+	</nav>
     <!-- Add your HTML content here -->
+    <div class="rooms" id="rooms">
+        <div class="heading">Rooms</div>
+        <div class="desc"><p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p></div>
+        
+        <form class="booking2-info">
+            <div class="booking2-input width1-4">
+                <label for="check-in2">Check In</label>
+                <input type="text" placeholder="DD MM YYYY" id="check-in2" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+            </div>
+            <div class="booking2-input width1-4">
+                <label for="check-out2">Check Out</label>
+                <input type="text" placeholder="DD MM YYYY" id="check-out2" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+            </div>
+            <div class="booking2-input booking2-input-last-two">
+                <label for="adults2">Adults</label>
+                <input type="number" value="1" min="1" max="6" id="adults2" required>
+            </div>
+            <div class="booking2-input booking2-input-last-two">
+                <label for="kids2">Kids</label>
+                <input type="number" value="0" min="0" max="6" id="kids2" required>
+            </div>
+            <div class="search">
+                <label for="search-btn2">Search</label>
+                <button class="search-btn2" id="search-btn2">Search</button>
+            </div>
+        </form>
+
+        <div class="room-types">
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Single Room">
+                    <div class="room-desc">
+                        <h2>Single Room</h2>
+                        <p class="room-price">From $99</p><br>
+                        <p>Single Bed</p><br>
+                        <p>15m<sup>2</sup></p>
+                        <div class="search-btn2">Choose Room</div>
+                    </div>
+                </div>
+            </div>
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Double Room</h2>
+                        <p class="room-price">From $149</p><br>
+                        <p>Queen-size Bed</p><br>
+                        <p>25m<sup>2</sup></p>
+                        <div class="search-btn2">Choose Room</div>
+                    </div>
+                </div>
+            </div>
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Deluxe Room">
+                    <div class="room-desc">
+                        <h2>Deluxe Room</h2>
+                        <p class="room-price">From $199</p><br>
+                        <p>King-size Bed</p><br>
+                        <p>40m<sup>2</sup></p>
+                        <div class="search-btn2">Choose Room</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
