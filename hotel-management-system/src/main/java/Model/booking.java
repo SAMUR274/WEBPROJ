@@ -7,6 +7,8 @@ import javax.persistence.Id;
 import javax.persistence.*;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 @Entity
 public class booking {
@@ -22,10 +24,11 @@ public class booking {
     @JoinColumn(name = "customer_id", nullable = false)
     private customer customer;
     
-    
+    @OneToMany(mappedBy = "booking", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    private Set<providedService> providedServices = new HashSet<>();
 
-    
-	public booking(Long id, Long customerId, Long roomId, Date startDate, Date endDate, Model.customer customer) {
+	public booking(Long id, Long customerId, Long roomId, Date startDate, Date endDate, Model.customer customer,
+			Set<providedService> providedServices) {
 		super();
 		this.id = id;
 		this.customerId = customerId;
@@ -33,9 +36,8 @@ public class booking {
 		this.startDate = startDate;
 		this.endDate = endDate;
 		this.customer = customer;
+		this.providedServices = providedServices;
 	}
-
-	// Getters and setters
 
 	public Long getId() {
 		return id;
@@ -85,10 +87,19 @@ public class booking {
 		this.customer = customer;
 	}
 
+	public Set<providedService> getProvidedServices() {
+		return providedServices;
+	}
+
+	public void setProvidedServices(Set<providedService> providedServices) {
+		this.providedServices = providedServices;
+	}
+
 	@Override
 	public String toString() {
 		return "booking [id=" + id + ", customerId=" + customerId + ", roomId=" + roomId + ", startDate=" + startDate
-				+ ", endDate=" + endDate + ", customer=" + customer + "]";
+				+ ", endDate=" + endDate + ", customer=" + customer + ", providedServices=" + providedServices + "]";
 	}
+
 }
 

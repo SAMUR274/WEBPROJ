@@ -47,7 +47,9 @@ public class customerController {
         if (optionalCustomer.isPresent()) {
             customer customer = optionalCustomer.get();
             customer.setName(customerDetails.getName());
-            // Set other customer details
+            customer.setPhoneNumber(customerDetails.getPhoneNumber());
+            customer.setEmail(customerDetails.getEmail());
+
             return customer_Service.updateCustomer(customer);
         } else {
             // Handle customer not found
