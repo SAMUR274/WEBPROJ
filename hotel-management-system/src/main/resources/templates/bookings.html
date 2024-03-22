@@ -20,45 +20,50 @@
         <div class="desc"><p>Complete your booking and select your desired services today.</p></div>
     </div>
      
-        
-    <div class="booking-form">
-        <form id="booking-form">
+	<form action="/bookings" method="post">    
+	    <div class="booking-form">
                 <h1>Select Services</h1>
         
 <!--             <label for="services" class="checkbox">Select Services:</label>
- -->            <div class="services">
-               <label><input type="checkbox" name="service" value="Breakfast"> Full Room Cleaning</label>
-                <label><input type="checkbox" name="service" value="Airport Shuttle"> Breakfast</label>
-                <label><input type="checkbox" name="service" value="Laundry"> Lunch</label>
+ -->           
+ 				<div class="services">
+               <label><input type="checkbox" name="service" value="Full Room Cleaning"> Full Room Cleaning</label>
+                <label><input type="checkbox" name="service" value="Breakfast"> Breakfast</label>
+                <label><input type="checkbox" name="service" value="Lunch"> Lunch</label>
                 <!-- Add more services as needed -->
-                <label><input type="checkbox" name="service" value="Room Service"> Dinner</label>
-                <label><input type="checkbox" name="service" value="Wi-Fi"> Full Meal Suite</label>
-                <label><input type="checkbox" name="service" value="Gym Access"> Gym Access</label>
+                <label><input type="checkbox" name="service" value="Dinner"> Dinner</label>
+                <label><input type="checkbox" name="service" value="Full Meal Suite"> Full Meal Suite</label>
                 <!-- Add more services as needed -->
-                <label><input type="checkbox" name="service" value="Spa"> Swimming Pool</label>
-                <label><input type="checkbox" name="service" value="Parking"> Gym</label>
-                <label><input type="checkbox" name="service" value="Parking"> Game Consoles</label>
-                <label><input type="checkbox" name="service" value="Parking"> Massage</label>
+                <label><input type="checkbox" name="service" value="Swimming Pool"> Swimming Pool</label>
+                <label><input type="checkbox" name="service" value="Gym"> Gym</label>
+                <label><input type="checkbox" name="service" value="Game Consoles"> Game Consoles</label>
+                <label><input type="checkbox" name="service" value="Massage"> Massage</label>
                 
                 
                 <!-- Add more services as needed -->
             </div>
             <label for="stay-duration">Stay Duration (in days):</label>
             <input type="number" id="stay-duration" name="stay-duration" required>
+            
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
+            
           <div class="payment-info">
                 <label for="payment">Payment Information</label>
                 <label for="card-name">Cardholder Name:</label>
                 <input type="text" id="card-name" name="card-name" required>
+                
                 <label for="card-number">Card Number:</label>
                 <input type="text" id="card-number" name="card-number" required>
+                
                 <label for="cvv">CVV:</label>
                 <input type="password" id="cvv" name="cvv" required>
+                
                 <label><input type="checkbox" name="pay-in-person"> Pay in Person with Cash</label>
             </div>
             <button type="submit" class="confirm-btn">Confirm Booking</button>
-        </form>
-    </div>
+	    </div>
+    </form>
+    
 </body>
 </html>

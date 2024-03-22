@@ -27,12 +27,32 @@
                 <p>Room: Deluxe Suite</p> <!-- Replace with booked room information -->
                 <p>Check-in: 2024-04-01</p> <!-- Replace with check-in date -->
                 <p>Check-out: 2024-04-05</p> <!-- Replace with check-out date -->
+                <!-- Update button with appropriate class -->
+                <form action="/bookings/update" method="post">
+                    <input type="hidden" name="bookingId" value="1">
+                    <button type="submit" class="search-btn3">Update</button>
+                </form>
+                <!-- Delete button with appropriate class -->
+                <form action="/bookings/delete" method="post">
+                    <input type="hidden" name="bookingId" value="1">
+                    <button type="submit" class="search-btn3">Delete</button>
+                </form>
             </div>
             <div class="booking-item">
                 <h2>Booking #2</h2>
                 <p>Room: Standard Room</p>
                 <p>Check-in: 2024-04-10</p>
                 <p>Check-out: 2024-04-15</p>
+                <!-- Update button with appropriate class -->
+                <form action="/bookings/update" method="post">
+                    <input type="hidden" name="bookingId" value="2">
+                    <button type="submit" class="search-btn3">Update</button>
+                </form>
+                <!-- Delete button with appropriate class -->
+                <form action="/bookings/delete" method="post">
+                    <input type="hidden" name="bookingId" value="2">
+                    <button type="submit" class="search-btn3">Delete</button>
+                </form>
             </div>
             <!-- Add more booking items as needed -->
         </div>
