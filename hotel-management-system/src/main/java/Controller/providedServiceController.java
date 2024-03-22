@@ -13,5 +13,13 @@ public class providedServiceController {
     @Autowired
     private providedServiceService providedService_Service;
 
+	public providedServiceController(providedServiceService providedService_Service) {
+		super();
+		this.providedService_Service = providedService_Service;
+	}
+
     // Implement controller methods
+    
+    
+    
 }

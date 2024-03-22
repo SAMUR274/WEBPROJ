@@ -2,21 +2,156 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Services</title>
+    <title>Rooms</title>
     <link rel="stylesheet" href="../static/style.css">
 </head>
 <body>
+
     <nav>
 		<ul>
-			<li><a href="./index.html" id="logo">Name</a></li>
+			<li><a href="./index.html" id="logo">Home</a></li>
 			<li><a href="./rooms.html">Rooms</a></li>
 			<li><a href="./services.html">Services</a></li>
 			<li><a href="./about.html">About</a></li>
 			<li><a href="./bookings.html" id="book">Book Now</a></li>
 		</ul>
 	</nav>
-    
-    <h1>Services</h1>
     <!-- Add your HTML content here -->
+    <div class="rooms" id="rooms">
+        <div class="heading">Services</div>
+        <div class="desc"><p>With our wide selection of services, we'll ensure you have a hassle free stay.</p></div>
+        
+        <form class="booking2-info">
+            <div class="booking2-input width1-4">
+                <label for="check-in2">Search For Service</label>
+                <input type="text" placeholder="Service" id="check-in2" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+            </div>
+            <div class="search">
+                <label for="search-btn2">Search</label>
+                <button class="search-btn2" id="search-btn2">Search</button>
+            </div>
+        </form>
+
+        <div class="room-types">
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Single Room">
+                    <div class="room-desc">
+                        <h2>Full Room Cleaning</h2>
+                        <p class="room-price">From $25</p><br>
+                        <p>Single Bed</p><br>
+                        <p>30m Cleaning</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Breakfast</h2>
+                        <p class="room-price">From $30</p><br>
+                        <p>Delivered to Room</p><br>
+                        <p>2-4 People</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Lunch</h2>
+                        <p class="room-price">From $30</p><br>
+                        <p>Delivered to Room</p><br>
+                        <p>2-4 People</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Dinner</h2>
+                        <p class="room-price">From $30</p><br>
+                        <p>Delivered to Room</p><br>
+                        <p>2-4 People</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Full Meal Suite</h2>
+                        <p class="room-price">From $100</p><br>
+                        <p>All You Can Eat</p><br>
+                        <p>Located in Dining Hall</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Swimming Pool</h2>
+                        <p class="room-price">From $80</p><br>
+                        <p>One-Time Payment With Unlimited Use</p><br>
+                        <p>100m<sup>2</sup></p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Gym</h2>
+                        <p class="room-price">From $80</p><br>
+                        <p>One-Time Payment With Unlimited Use</p><br>
+                        <p>300m<sup>2</sup></p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Deluxe Room">
+                    <div class="room-desc">
+                        <h2>Game Consoles</h2>
+                        <p class="room-price">From $50</p><br>
+                        <p>PS5, Nintendo Switch, or Xbox Series X</p><br>
+                        <p>10 Consoles Available</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Deluxe Room">
+                    <div class="room-desc">
+                        <h2>Massage</h2>
+                        <p class="room-price">From $55</p><br>
+                        <p>Offered In Room or in Spa</p><br>
+                        <p>30m-90m Sessions</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </body>
 </html>
