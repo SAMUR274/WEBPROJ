@@ -13,7 +13,7 @@
 			<li><a href="./rooms.html">Rooms</a></li>
 			<li><a href="./services.html">Services</a></li>
 			<li><a href="./about.html">About</a></li>
-			<li><a href="./bookings.html" id="book">Book Now</a></li>
+			<li><a href="./customers.html" id="book">Profile</a></li>
 		</ul>
 	</nav>
 
@@ -116,7 +116,68 @@
 				<a href="../templates/rooms.html">Search for more rooms</a>
 			</div>
         </div>
+		
+		
+		    <div class="rooms" id="rooms">
+        <div class="heading">Services</div>
+        <div class="desc"><p>With our wide selection of services, we'll ensure you have a hassle free stay.</p></div>
+        
+        <form class="booking2-info">
+            <div class="booking2-input width1-4">
+                <label for="check-in2">Search For Service</label>
+                <input type="text" placeholder="Service" id="check-in2" required pattern="^([0-2][0-9]|(3)[0-1])( )(((0)[0-9])|((1)[0-2]))( )\d{4}$">
+            </div>
+            <div class="search">
+                <label for="search-btn2">Search</label>
+                <button class="search-btn2" id="search-btn2">Search</button>
+            </div>
+        </form>
 
+        <div class="room-types">
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Single Room">
+                    <div class="room-desc">
+                        <h2>Full Room Cleaning</h2>
+                        <p class="room-price">From $25</p><br>
+                        <p>Single Bed</p><br>
+                        <p>30m Cleaning</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Full Meal Suite</h2>
+                        <p class="room-price">From $100</p><br>
+                        <p>All You Can Eat</p><br>
+                        <p>Located in Dining Hall</p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="room-type">
+                <div class="room-card">
+                    <img src="../images/hotel.png" alt="Double Room">
+                    <div class="room-desc">
+                        <h2>Swimming Pool</h2>
+                        <p class="room-price">From $80</p><br>
+                        <p>One-Time Payment With Unlimited Use</p><br>
+                        <p>100m<sup>2</sup></p>
+                        <div class="search-btn2">Add Service</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="search-more">
+				<a href="../templates/services.html">Explore All Services</a>
+		</div>
+            
+    </div>
         
 
         <div class="offer">

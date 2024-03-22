@@ -205,7 +205,24 @@ li::after {
     font-size: 18px;
 } 
 
-.search-btn2 {
+
+
+.search-btn2 a{
+	display: block;
+    margin: 5px 0 0 0;
+    width: 100%;
+    padding: 15px 18px;
+    text-align: center;
+    background-color: #000;
+    color: #dadada;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    font-size: 18px;
+	text-decoration: none; 
+}
+
+.search-btn3 {
     display: block;
     margin: 5px 0 0 0;
     width: 100%;
@@ -217,12 +234,25 @@ li::after {
     border-radius: 2px;
     border: none;
     font-size: 18px;
-}
+}  
+
 
 .search-btn2:hover {
     background-color: #ccc;
     color: #000;
 }
+
+.search-btn3:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+.search-btn2 a:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+
 
 .booking2-info::after {
     content: "";
@@ -539,6 +569,104 @@ footer p a {
         padding: 10px 0 0 0;
     }
 }
+
+
+
+
+.booking-form {
+    margin: 50px auto;
+    width: 60%;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+}
+.booking-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+.booking-form input[type="text"], 
+.booking-form input[type="email"],
+.booking-form input[type="number"],
+.booking-form input[type="password"],
+.booking-form textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.booking-form label.checkbox {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.booking-form .services {
+    margin-bottom: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.booking-form .services label {
+    margin: 0;
+}
+.booking-form .payment-info {
+    border-top: 1px solid #ddd;
+    padding-top: 15px;
+}
+.booking-form .payment-info label {
+    font-weight: bold;
+}
+.booking-form .confirm-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.booking-form .confirm-btn:hover {
+    background-color: #444;
+}
+
+
+.customer-profile {
+    margin: 50px auto;
+    width: 80%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.customer-profile h1,
+.customer-profile p {
+    padding: 5px 0;
+}
+
+.customer-profile h2{
+	padding-top: 20px;
+}
+
+        
+        
+.booking-list {
+    margin-top: 20px;
+}
+.booking-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.booking-item h2 {
+    margin-bottom: 5px;
+}
+.booking-item p {
+    margin: 5px 0;
+}
+
+
 
 /* Table styles */
 /*table {
